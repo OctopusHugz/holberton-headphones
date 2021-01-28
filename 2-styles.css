@@ -915,8 +915,8 @@ main img {
 	height: 1491px;
 	background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, .6)), url(./images/headphones_hero_2.jpg);
 	background-repeat: no-repeat;
-	background-size: auto 1491px;
-	background-position: 46% -150px;
+	background-size: cover;
+	background-position: 46%;
 	text-align: center;
 }
 
@@ -951,6 +951,10 @@ main img {
 
 .or-section .showcase-square+.showcase-square {
 	margin-top: 42px;
+}
+
+.or-section .showcase-square:last-of-type() {
+	margin-bottom: 69px;
 }
 
 /* My Media Queries */
