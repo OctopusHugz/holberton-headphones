@@ -908,6 +908,51 @@ main img {
 	margin-top: 27.56px;
 }
 
+/* Section OUR RESULTS
+						============================= */
+
+.or-section {
+	height: 1491px;
+	background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, .6)), url(./images/headphones_hero_2.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 1491px;
+	background-position: 46% -150px;
+	text-align: center;
+}
+
+.or-section .showcase-text {
+	margin-top: 0;
+	padding-top: 125px;
+	margin-bottom: 0;
+	/* height: 334px; */
+	height: 459px;
+}
+
+.or-section .showcase-title {
+	width: 266px;
+	height: 5rem;
+}
+
+.or-section .showcase-title-text {
+	margin-top: 46px;
+}
+
+.or-section .showcase-icons {
+	margin-top: 77px;
+	margin-bottom: 69px;
+}
+
+.or-section .showcase-square {
+	background: url(./images/polygon.png);
+	background-repeat: no-repeat;
+	width: 190px;
+	height: 190px;
+}
+
+.or-section .showcase-square+.showcase-square {
+	margin-top: 42px;
+}
+
 /* My Media Queries */
 
 /* Tablet Media Queries */
