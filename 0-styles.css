@@ -622,10 +622,6 @@ main img {
 	padding: var(--section-padding);
 }
 
-.section-body {
-	padding-top: 2rem;
-}
-
 /* Section HERO
 						============================= */
 
@@ -635,6 +631,7 @@ main img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 33.5%;
+	padding-top: 0.1px;
 }
 
 .section-hero .section-inner {
