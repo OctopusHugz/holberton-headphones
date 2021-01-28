@@ -630,8 +630,8 @@ main img {
 	background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, .6)), url(./images/headphones_hero_1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 33.5%;
-	padding-top: 0.1px;
+	background-position: 34.25%;
+	padding-top: 1rem;
 }
 
 .section-hero .section-inner {
