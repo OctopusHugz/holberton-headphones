@@ -1124,4 +1124,13 @@ main img {
 	.showcase-square+.showcase-square {
 		margin-top: 0;
 	}
+
+	.showcase-square:nth-of-type(1),
+	.showcase-square:nth-of-type(4) {
+		margin-top: 13px;
+	}
+
+	.showcase-square:nth-of-type(3) {
+		margin-top: 14px;
+	}
 }
