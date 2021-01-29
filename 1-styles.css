@@ -635,6 +635,7 @@ main img {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	width: 100%;
 }
 
 .header .menu-icon {
@@ -666,12 +667,12 @@ main img {
 }
 
 .header .menu-icon .navicon::before {
-	top: .7rem;
+	top: 6px;
 	width: 18px;
 }
 
 .header .menu-icon .navicon::after {
-	top: -.7rem;
+	top: -6px;
 	width: 20px;
 }
 
@@ -679,7 +680,7 @@ main img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 66px;
+	margin-left: 17.6%;
 }
 
 /* menu btn */
@@ -690,7 +691,7 @@ main img {
 
 .menu-btn:checked~.container>.navbar-menu {
 	display: block;
-	padding: 0 4rem 0 4rem;
+	padding: 0 6rem 0 6rem;
 }
 
 .navbar-menu {
@@ -847,35 +848,13 @@ main img {
 }
 
 .showcase-icons .icon {
-	font-family: 'holberton_school-icon';
 	color: var(--color-primary);
-	font-size: 6rem;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#sound {
-	height: 65.36px;
-	width: 94.2px;
-	margin: 0 auto;
-}
-
-#play {
-	width: 67.59px;
-	height: 76.8px;
-}
-
-#bars {
-	width: 51.66px;
-	height: 57.27px;
-}
-
-#ear {
-	width: 61.43px;
-	height: 61.44px;
-}
 
 .icon-title {
 	height: 26px;
@@ -892,12 +871,11 @@ main img {
 }
 
 #sound+.icon-title {
-	margin-top: 23.62px;
+	margin-top: 24.62px;
 }
 
 #play+.icon-title {
 	margin-top: 25.2px;
-	width: 193px;
 }
 
 #bars+.icon-title {
@@ -913,7 +891,7 @@ main img {
 /* Tablet Media Queries */
 /* Change max-width to 767px? */
 
-@media (min-width: 481px) and (max-width: 1399px) {
+@media (min-width: 481px) and (max-width: 768px) {
 	.header .menu-icon {
 		display: none;
 	}
@@ -925,17 +903,24 @@ main img {
 
 	.navbar-menu {
 		display: block;
+		/* padding: 0 4rem 0 4rem; */
 	}
 
 	.header-container {
-		width: 100%;
-		height: 2rem;
-		margin-top: 29px;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding-top: 29px;
+		width: 82.4%;
+		flex-wrap: nowrap;
+	}
+
+	.logo-container {
+		margin: 0;
 	}
 
 	.nav .nav-item {
-		margin: 0 2rem 0 0;
+		/* margin: 0 2rem 0 0; */
+		margin-right: auto;
 	}
 
 	.nav .nav-item+.nav-item {
@@ -943,8 +928,9 @@ main img {
 	}
 
 	.nav-container {
+		width: 255px;
 		height: 15px;
-		margin-right: 69px;
+		margin: 0;
 	}
 
 	.hero-homepage {
@@ -952,6 +938,7 @@ main img {
 		background-image: url(./images/headphones_hero_1.jpg);
 		background-size: cover;
 		background-position: center;
+		padding-top: 0;
 	}
 
 	.section-hero {
@@ -962,11 +949,10 @@ main img {
 		margin-top: 0;
 	}
 
-
 	.section-hero .section-inner {
 		width: 637px;
 		height: 313px;
-		margin-top: 340px;
+		margin-top: 372px;
 		margin-left: 66px;
 		margin-right: 65px;
 		margin-bottom: 115px;
@@ -992,25 +978,35 @@ main img {
 	}
 
 	.showcase-text {
-		width: 637px;
-		height: 184px;
+		width: 83%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
 		margin-bottom: 6rem;
+	}
+
+	.showcase-title {
+		max-width: 448px;
+	}
+
+	.showcase-title-text {
+		height: auto;
 	}
 
 	.showcase-square+.showcase-square {
 		margin-top: 0;
 	}
 
-	.showcase-square:nth-of-type(1) {
+	.wwd-section .showcase-square:nth-of-type(1) {
 		margin-top: 13px;
 		margin-bottom: 97px;
 	}
 
-	.showcase-square:nth-of-type(2) {
+	.wwd-section .showcase-square:nth-of-type(2) {
 		margin-bottom: 6rem;
 	}
 
-	.showcase-square:nth-of-type(3) {
+	.wwd-section .showcase-square:nth-of-type(3) {
 		height: 179px;
 	}
 
@@ -1022,19 +1018,23 @@ main img {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-}
 
+	#sound+.icon-title {
+		margin-top: 23.62px;
+	}
+}
 
 
 
 
 /* Desktop Media Queries */
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
 	.hero-homepage {
 		height: 800px;
 		background-image: url(./images/headphones_hero_1.jpg);
 		background-position: 50% 100%;
+		padding-top: 0;
 	}
 
 	.header .menu-icon {
@@ -1042,9 +1042,9 @@ main img {
 	}
 
 	.header-container {
-		width: 1000.39px;
-		height: 2rem;
-		margin-top: 27.76px;
+		width: 82.4%;
+		padding-top: 27.76px;
+		margin: 0 auto;
 		justify-content: space-between;
 	}
 
@@ -1070,10 +1070,10 @@ main img {
 		margin: 0;
 	}
 
-	.header>.container {
+	/* .header>.container {
 		margin-left: 200.61px;
 		margin-right: 199px;
-	}
+	} */
 
 	.logo-container {
 		margin-left: 0;
@@ -1084,12 +1084,13 @@ main img {
 	}
 
 	.section-hero .section-inner {
-		width: 637px;
-		height: 313px;
-		margin-top: 340px;
+		/* width: 637px;
+		height: 313px; */
+		margin: 340px auto 115px;
+		/* margin-top: 340px;
 		margin-left: 382px;
 		margin-right: 381px;
-		margin-bottom: 115px;
+		margin-bottom: 115px; */
 	}
 
 	button {
@@ -1115,10 +1116,12 @@ main img {
 	}
 
 	.showcase-icons {
-		flex-direction: row;
-		max-width: 1002px;
+		width: 472px;
+		height: 469px;
 		margin-left: auto;
 		margin-right: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.showcase-square+.showcase-square {
@@ -1133,4 +1136,9 @@ main img {
 	.showcase-square:nth-of-type(3) {
 		margin-top: 14px;
 	}
+
+	#sound+.icon-title {
+		margin-top: 23.62px;
+	}
+
 }
