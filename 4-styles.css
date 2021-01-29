@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
 	line-height: 1.15;
 	/* 1 */
 	-webkit-text-size-adjust: 100%;
@@ -681,6 +681,10 @@ main img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* margin-left: 17.6%; */
+}
+
+.header .logo-container {
 	margin-left: 17.6%;
 }
 
@@ -727,6 +731,46 @@ main img {
 .header .menu-btn:checked+.menu-icon .navicon::before,
 .header .menu-btn:checked+.menu-icon .navicon::after {
 	top: 0;
+}
+
+/* Footer
+			============================= */
+
+.footer {
+	background: #071629;
+}
+
+.footer .logo-container {
+	padding-top: 48px;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.footer .social-icons {
+	display: flex;
+	justify-content: center;
+	margin: 45px auto;
+	/* background-color: #071629; */
+}
+
+.footer .social-icons svg:nth-of-type(2) {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+.copyright p {
+	width: 98px;
+	margin: 0 0 39px 0;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	mix-blend-mode: normal;
+	opacity: 0.35;
 }
 
 /*** 3. SECTION ***/
@@ -1207,6 +1251,22 @@ main img {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
+	.footer .footer-icons-container {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 89.3%;
+	}
+
+	.footer .logo-container {
+		padding-top: 0;
+		margin: 0;
+	}
+
+	.footer .social-icons {
+		margin: 45px 0;
+	}
 }
 
 
@@ -1352,6 +1412,22 @@ main img {
 
 	.or-section .showcase-square+.showcase-square {
 		margin-top: 0;
+	}
+
+	.footer .footer-icons-container {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 14.28% 0 14.25%;
+		/* 	width: 89.3%; */
+	}
+
+	.footer .logo-container {
+		padding-top: 0;
+		margin: 0;
+	}
+
+	.footer .social-icons {
+		margin: 45px 0;
 	}
 
 }
