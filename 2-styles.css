@@ -635,11 +635,13 @@ main img {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	width: 100%;
 }
 
 .header .menu-icon {
 	cursor: pointer;
 	padding: 2.5rem 0.5rem 2.5rem 21px;
+	/* margin-left: 5.6%; */
 	position: relative;
 	user-select: none;
 }
@@ -666,12 +668,12 @@ main img {
 }
 
 .header .menu-icon .navicon::before {
-	top: .7rem;
+	top: 6px;
 	width: 18px;
 }
 
 .header .menu-icon .navicon::after {
-	top: -.7rem;
+	top: -6px;
 	width: 20px;
 }
 
@@ -679,7 +681,7 @@ main img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 66px;
+	margin-left: 17.6%;
 }
 
 /* menu btn */
@@ -690,7 +692,7 @@ main img {
 
 .menu-btn:checked~.container>.navbar-menu {
 	display: block;
-	padding: 0 4rem 0 4rem;
+	padding: 0 6rem 0 6rem;
 }
 
 .navbar-menu {
@@ -962,7 +964,7 @@ main img {
 /* Tablet Media Queries */
 /* Change max-width to 767px? */
 
-@media (min-width: 481px) and (max-width: 1399px) {
+@media (min-width: 481px) and (max-width: 768px) {
 	.header .menu-icon {
 		display: none;
 	}
@@ -974,17 +976,24 @@ main img {
 
 	.navbar-menu {
 		display: block;
+		/* padding: 0 4rem 0 4rem; */
 	}
 
 	.header-container {
-		width: 100%;
-		height: 2rem;
-		margin-top: 29px;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding-top: 29px;
+		width: 82.4%;
+		flex-wrap: nowrap;
+	}
+
+	.logo-container {
+		margin: 0;
 	}
 
 	.nav .nav-item {
-		margin: 0 2rem 0 0;
+		/* margin: 0 2rem 0 0; */
+		margin-right: auto;
 	}
 
 	.nav .nav-item+.nav-item {
@@ -992,8 +1001,9 @@ main img {
 	}
 
 	.nav-container {
+		width: 255px;
 		height: 15px;
-		margin-right: 69px;
+		margin: 0;
 	}
 
 	.hero-homepage {
@@ -1001,6 +1011,7 @@ main img {
 		background-image: url(./images/headphones_hero_1.jpg);
 		background-size: cover;
 		background-position: center;
+		padding-top: 0;
 	}
 
 	.section-hero {
@@ -1011,11 +1022,10 @@ main img {
 		margin-top: 0;
 	}
 
-
 	.section-hero .section-inner {
 		width: 637px;
 		height: 313px;
-		margin-top: 340px;
+		margin-top: 372px;
 		margin-left: 66px;
 		margin-right: 65px;
 		margin-bottom: 115px;
@@ -1041,26 +1051,82 @@ main img {
 	}
 
 	.showcase-text {
-		width: 637px;
-		height: 184px;
+		width: 83%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
 		margin-bottom: 6rem;
 	}
+
+	.showcase-title {
+		max-width: 448px;
+	}
+
+	.showcase-title-text {
+		height: auto;
+	}
+
 
 	.showcase-square+.showcase-square {
 		margin-top: 0;
 	}
 
-	.showcase-square:nth-of-type(1) {
+	.wwd-section .showcase-square:nth-of-type(1) {
 		margin-top: 13px;
 		margin-bottom: 97px;
 	}
 
-	.showcase-square:nth-of-type(2) {
+	.wwd-section .showcase-square:nth-of-type(2) {
 		margin-bottom: 6rem;
 	}
 
-	.showcase-square:nth-of-type(3) {
+	.wwd-section .showcase-square:nth-of-type(3) {
 		height: 179px;
+	}
+
+	.or-section {
+		height: auto;
+		background-position: center;
+	}
+
+	.or-section .showcase-text {
+		height: auto;
+		padding-top: 141px;
+	}
+
+	.or-section .showcase-title {
+		width: 448px;
+		height: 2.5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.or-section .showcase-title-text {
+		margin-top: 2.5rem;
+		height: auto;
+	}
+
+	.or-section .showcase-icons {
+		margin-top: 76px;
+		margin-bottom: 0;
+	}
+
+	.or-section .showcase-square {
+		margin-top: 0;
+	}
+
+	.or-section .showcase-square+.showcase-square {
+		margin-top: 0;
+	}
+
+	.or-section .showcase-square:nth-of-type(1),
+	.or-section .showcase-square:nth-of-type(2) {
+		margin-bottom: 42px;
+	}
+
+	.or-section .showcase-square:nth-of-type(3),
+	.or-section .showcase-square:nth-of-type(4) {
+		margin-bottom: 53px;
 	}
 
 	.showcase-icons {
@@ -1076,14 +1142,14 @@ main img {
 
 
 
-
 /* Desktop Media Queries */
 
-@media (min-width: 1400px) {
+@media (min-width: 769px) {
 	.hero-homepage {
 		height: 800px;
 		background-image: url(./images/headphones_hero_1.jpg);
 		background-position: 50% 100%;
+		padding-top: 0;
 	}
 
 	.header .menu-icon {
@@ -1091,9 +1157,9 @@ main img {
 	}
 
 	.header-container {
-		width: 1000.39px;
-		height: 2rem;
-		margin-top: 27.76px;
+		width: 82.4%;
+		padding-top: 27.76px;
+		margin: 0 auto;
 		justify-content: space-between;
 	}
 
@@ -1133,12 +1199,13 @@ main img {
 	}
 
 	.section-hero .section-inner {
-		width: 637px;
-		height: 313px;
-		margin-top: 340px;
+		/* width: 637px;
+		height: 313px; */
+		margin: 340px auto 115px;
+		/* margin-top: 340px;
 		margin-left: 382px;
 		margin-right: 381px;
-		margin-bottom: 115px;
+		margin-bottom: 115px; */
 	}
 
 	button {
@@ -1164,10 +1231,12 @@ main img {
 	}
 
 	.showcase-icons {
-		flex-direction: row;
-		max-width: 1002px;
+		width: 472px;
+		height: 469px;
 		margin-left: auto;
 		margin-right: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.showcase-square+.showcase-square {
@@ -1181,5 +1250,54 @@ main img {
 
 	.showcase-square:nth-of-type(3) {
 		margin-top: 14px;
+	}
+
+	.or-section {
+		height: auto;
+	}
+
+	.or-section .showcase-text {
+		height: 325px;
+	}
+
+	.or-section .showcase-title {
+		width: 448px;
+		height: 2.5rem;
+	}
+
+	.or-section .showcase-title-text {
+		height: auto;
+	}
+
+	.or-section .showcase-icons {
+		height: auto;
+		margin-top: 56px;
+		margin-bottom: 0;
+		padding-bottom: 53px;
+	}
+
+	.or-section .showcase-square {
+		margin-top: 0;
+	}
+
+	.or-section .showcase-square+.showcase-square {
+		margin-top: 0;
+	}
+
+}
+
+@media (min-width: 828px) {
+	.showcase-icons {
+		width: auto;
+		height: auto;
+		flex-direction: row;
+		max-width: 1002px;
+		margin-left: auto;
+		margin-right: auto;
+		flex-wrap: nowrap;
+	}
+
+	.or-section .showcase-icons {
+		padding-bottom: 79px;
 	}
 }
