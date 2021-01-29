@@ -676,11 +676,11 @@ main img {
 	width: 20px;
 }
 
-.logo-container {
+.header .logo-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: auto;
+	margin-left: 17.6%;
 }
 
 /* menu btn */
