@@ -680,7 +680,7 @@ main img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 17.6%;
+	margin-left: auto;
 }
 
 /* menu btn */
@@ -950,8 +950,8 @@ main img {
 	}
 
 	.section-hero .section-inner {
-		width: 637px;
-		height: 313px;
+		/* width: 637px;
+		height: 313px; */
 		margin-top: 372px;
 		margin-left: 66px;
 		margin-right: 65px;
